@@ -1,0 +1,98 @@
+.rectangle {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .rect-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+  }
+  
+  .rect {
+    display: flex;
+    padding: 10px; /* Reduced padding */
+    height: 180px; /* Reduced height */
+    width: 180px; /* Reduced width */
+    border-radius: 5px; /* Reduced border-radius */
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+  
+  .rect:hover {
+    animation-name: pulse;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+  
+  .rect img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px; /* Reduced border-radius */
+  }
+  
+  .text-overlay {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .animate__animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+  
+  @keyframes bounceInLeft {
+    /* Keyframe animation code */
+  }
+  
+  .animate__bounceInLeft {
+    animation-name: bounceInLeft;
+  }
+  
+  @keyframes zoomIn {
+    /* Keyframe animation code */
+  }
+  
+  .animate__zoomIn {
+    animation-name: zoomIn;
+  }
+  
+  @keyframes rotateIn {
+    /* Keyframe animation code */
+  }
+  
+  .animate__rotateIn {
+    animation-name: rotateIn;
+  }
+  
+  @keyframes flipInX {
+    /* Keyframe animation code */
+  }
+  
+  .animate__flipInX {
+    backface-visibility: visible !important;
+    animation-name: flipInX;
+  }
+  
+  @keyframes pulse {
+    from {
+      transform: scale3d(1, 1, 1);
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.1);
+    }
+  
+    50% {
+      transform: scale3d(1.05, 1.05, 1.05);
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
+    }
+  
+    to {
+      transform: scale3d(1, 1, 1);
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.1);
+    }
+  }

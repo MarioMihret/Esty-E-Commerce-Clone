@@ -1,0 +1,37 @@
+.moving-container {
+    width: 100%;
+   
+  }
+  
+  .moving {
+   
+    display: inline-block;
+    animation: moveImages 30s linear infinite;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+   
+  }
+  
+  .move {
+    display: inline-block;
+    padding: 0 20px;
+
+  }
+  
+  .move img {
+    width: 100px;
+    height: 100px;
+    
+  }
+  
+  @keyframes moveImages {
+    0% {
+      transform: translateX(0%);
+    
+    }
+    50% {
+      transform: translateX(50%);
+   }
+
+
+  }

@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Alike+Angular&display=swap'); 
+ h1 {
+    font-family: "Alike Angular", serif;
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .container {
+    display: flex;
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .circle1,
+  .circle2,
+  .circle3,
+  .circle4,
+  .circle5,
+  .circle6 {
+    width: 130px;
+    height: 130px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 20px;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .circle1 img,
+  .circle2 img,
+  .circle3 img,
+  .circle4 img,
+  .circle5 img,
+  .circle6 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .image-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    padding: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .circle1:hover img,
+  .circle2:hover img,
+  .circle3:hover img,
+  .circle4:hover img,
+  .circle5:hover img,
+  .circle6:hover img {
+    transform: scale(1.1);
+  }
+  
+  .circle1:hover .image-text,
+  .circle2:hover .image-text,
+  .circle3:hover .image-text,
+  .circle4:hover .image-text,
+  .circle5:hover .image-text,
+  .circle6:hover .image-text {
+    opacity: 1;
+  }

@@ -1,0 +1,31 @@
+.testimonial-section {
+    background-color: #FDF5DF;
+    padding: 40px 0;
+  }
+  
+  .testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .testimonial-item {
+   
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+  }
+  
+  .testimonial-item h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+  
+  .testimonial-item p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+  }
