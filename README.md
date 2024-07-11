@@ -1,3 +1,4 @@
+![mario](https://github.com/MarioMihret/Esty-E-Commerce-Clone/blob/main/mario.png)
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
